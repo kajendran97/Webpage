@@ -1,0 +1,190 @@
+
+			/* ======Layout=====*/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900');
+
+body{
+	margin: 0%;
+	background-color: #090909;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color:white;
+}
+
+#move{
+	text-align: center;
+	font-size: 20px;
+}
+#move2{
+    text-align: center;
+    padding-left: 50px;
+    margin-top: 110px;
+}
+#move3{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    width: 400px;
+    height: 60px
+}
+.mySlides{
+    width: 100%;
+    margin: 0;
+}
+
+
+			/* ======Navbar=====*/
+
+.nav_bar{
+	list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Fira Sans', serif;
+    text-align: center;
+    width: 100%;
+}
+
+
+	 /* ======Top Navbar=====*/
+
+#top_nav ul{
+	margin-top: 40px;
+    margin-left: 400px;
+    font-weight: 500;
+    font-size: 125%;
+}
+ul li{
+	display: inline; 
+}
+#top_nav ul li a{
+
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+#top_nav ul li a:hover{
+	background-color: white;
+	color: black;
+	margin-top: 10px;
+    padding: 15px 15px; 
+}
+
+
+	 /* ======Bottom Navbar=====*/
+
+#bot_nav ul{
+	margin-top: 2010px;
+}
+ul li{
+	display: inline; 
+}
+#bot_nav ul li a{
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+#bot_nav ul li a:hover{
+	background-color: white;
+	color: black; 
+    padding: 12px 20px;
+}
+
+
+	/* ======Logo=====*/
+
+#logo1{
+	width: 40px;
+	height: 40px;
+}
+
+
+	/*======Album_images======*/
+
+div.gallery { 
+    margin: 2px;
+    border: 1px solid #fff;
+    float: left;
+    width: 300px;
+}
+
+/*div.gallery :hover {
+    border: 1px solid #000;
+}
+*/
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+   /*======background_image========*/
+.fimage{
+    padding-left: 70px;
+    height: 600px;
+    margin-top: 10px;
+}
+	/*======brand_images========*/
+#brand img{
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
+}
+
+
+	/*=======Footer=======*/
+
+footer{
+   /* background-color: #74777c; 
+    opacity: 0.5; */
+}
+
+#fdetails {
+    margin-top: 120px;
+	display: inline-block;
+    color: white;
+    padding-left: 130px;
+}
+
+            /* ====== Headings =====*/  
+
+h1{
+    font-size: 200%;
+    font-weight: 500;
+}
+h2{
+    font-size: 30px;     
+    color: #fff; 
+    text-align: center; 
+    margin-top: 50px;
+}
+
+            /* ====== Horizontal Ruler=====*/
+
+#move hr { 
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px inset;
+    width: 60%;
+}
+h2 hr{
+    width: 180px;
+    margin-top: 0em;
+    margin-bottom: 0.5em;    
+}
+
+
+
+
+
+
+

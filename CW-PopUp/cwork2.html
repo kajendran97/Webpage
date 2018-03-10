@@ -1,0 +1,90 @@
+<!DOCTYPE>
+	<html>
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title> Music Gallery </title>
+		</head>
+		<style>
+			body{
+				width: 100%;
+				height:100%;
+				background-color: black; 
+				font-family: Arial, Helvetica, sans-serif;
+				background-image: url(footer01.jpg);
+    			background-size: 100% 100%;
+			}
+			div{
+				padding-left:300px;	
+			}
+			h2{
+				padding-left:560px;
+			}
+			.move{
+				padding-left:600px;
+			}
+			.story{
+				width : 150px;
+				height: 150px;
+				border: 1px solid #eeebd9;
+			}
+			button {
+				padding: 0px;
+			}
+
+			.area{
+				width: 800px; 
+				height:200px; 
+				padding:2%; 
+				text-align:center;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:2em; 
+				border:1px solid white; 
+				resize:none
+			}
+
+			}
+			.mainpic{
+				margin-left: 750px;
+				border:1px solid white; 
+			}
+		</style>
+		<script>
+			function pic1(){
+				document.images[0].src = 'NnOqToId.jpg';
+				document.getElementById("description").value = "Name = A.R.Rahman \nAwards = oscar";
+
+			}
+			function pic2(){
+				document.images[0].src = 'Unknown-2.jpg';
+				document.getElementById("description").value = "Name = Harris Jeyaraj \nAwards = oscar";
+			}
+			function pic3(){
+				document.images[0].src = 'unknown-3.jpg';
+				document.getElementById("description").value = "Name = Bruno Mars \nAwards = oscar";
+			}
+			function pic4(){
+				document.images[0].src = 'unknown-4.jpg';
+				document.getElementById("description").value = "Name = chino y nacho \nAwards = oscar";
+			}
+			function pic5(){
+				document.images[0].src = 'ilayaraaja.jpg';
+				document.getElementById("description").value = "Name = ilayaraaja \nAwards = oscar";
+			}
+			
+		</script>
+		<body>
+			<h2 class="move"><font color="white">Music Gallery</font></h
+		<form >
+			 <h2><img src ="simple0.jpg" width ="250" height="250" class="mainpic"></h2> <br>
+		<div>
+			<textarea id = "description" class="area" placeholder="Details..."></textarea><br>
+			<br>
+			<button type="button" onclick="pic1()"><img src = "NnOqToId.jpg" class="story"></button>
+			<button type="button" onclick="pic2()"><img src = "Unknown-2.jpg" class="story"></button>
+			<button type="button" onclick="pic3()"><img src = "Unknown-3.jpg" class="story"></button>
+			<button type="button" onclick="pic4()"><img src = "Unknown-4.jpg" class="story"></button>
+			<button type="button" onclick="pic5()"><img src = "ilayaraaja.jpg" class="story"></button>
+		</form>
+		</div>
+		</body>
+	</html>

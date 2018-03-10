@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title> Music Mania </title>
+  <link rel="icon" href="icon.png">
+  <link type="text/css" rel="stylesheet" href="home3.css">
+</head>
+
+<body>
+<!--Header-->
+	<div>
+    <div class="nav_bar">   <!--Top_Navigation_bar-->
+      <div id="top_nav">
+        <img src="logo3.png"  id="move3" >  <!--Logo-->
+           <ul>
+              <li><a class="active" href="#home">Home</a></li>
+              <li><a href="#download">Download</a></li>
+              <li><a href="#quiz">Quiz</a></li>
+              <li><a href="#search">Search</a></li>
+              <li><a href="#addtocart">Add to Cart</a></li>
+              <li><a href="#about">About Us</a></li>
+          </ul>
+    </div>
+
+      <div id="bot_nav">    <!--Bottom_navigation_bar-->
+        <ul>
+          <li><a href="privacy.html" > Privacy policy </a></li>
+          <li><a href="comment.html" > Feedback </a></li> 
+          <li><a href="#Privacy policy" > Site map </a></li>
+          <br>
+          <br>
+          <hr width="100%">
+        </ul> 
+     </div>
+
+</div>  <!--Image_Slider-->
+
+  <img class="mySlides" src="pic4.jpg" >
+  <img class="mySlides" src="pic3.jpg" >
+  <img class="mySlides" src="pic2.jpg" >
+  <img class="mySlides" src="pic1.jpg" >
+</div>
+
+<div  id="move">  <!--body_content-->
+    <h1><img src="icon.png" id="logo1"> Get connect with Music Mania </h1>
+    <p> Discover all the ways you can showcase and listen music. Access <br>brand guidelines and badges. Create embeddable widgets for<br> albums, songs, playlists, and more. </p>
+    <hr>
+
+  </div>
+ 
+ <h2> New Arrivals <hr></h2> <!--4_Album_images-->
+  <div class="fimage">
+        <div class="gallery">
+          <a target="_blank" href="song1.jpg">
+          <img src="song1.jpg" alt="albumn1" width="300" height="200">
+          </a>
+          <div class="desc"> Orion music album by Rui Momota <br> Released - 11 july 2017 <br> Length - 5:46</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="song2.jpg">
+          <img src="song2.jpg" alt="albumn" width="600" height="400">
+          </a>
+          <div class="desc"> Electro Dubsteb album by Al Scuba  <br> released - 25 june 2017 <br> Length - 15:25</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="song title.jpg">
+          <img src="song4.jpg" alt="albumn" width="600" height="800">
+          </a>
+          <div class="desc"> Shape of you Single by Ed Sheeran <br> Released - 11 May 2017 <br> Length - 3:53</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="song title.jpg">
+        <img src="song3.jpg" alt="albumn" width="600" height="800">
+        </a>
+        <div class="desc"> Pain of love by Keith Sweat <br> Released - 6 May 2017 <br> Length - 4:04 </div>
+      </div>
+  </div>
+
+  <div id = "brand" > <img src="brand.jpg"></div>
+
+
+
+
+
+  <footer> <!--Footer-->
+     <div id="fdetails"> <b> Contact Details </b> <br> Admin : 0757757056. <br> E-Mail Id : chandreswaran@gmail.com. <br> Like us in Facebook. <br> Follow us in Twitter. </div>
+     <div id="fdetails"> <b> Address </b><br>No-57, Ramakrishna Rd,<br> Welawatha,<br> Colombo 00600.<br>Phone - 072 272 7272. </div>
+     <div id="fdetails"> <b> Music Mania </b><br>Play the moments,<br>Pause the memories,<br>Stop the pain,<br>Rewind the happiness.</div>
+     <div id="fdetails"> <b> Mission of Mania </b><br> Keep you all entertain <br> Make our voice to change the world <br> Makes you feel better <br> Keep on moving sucess in life. </div>  
+  </footer>   
+  <div id="move2">  &copy; Music Mania Student 02 - Chandreswaran Kajendran , All Copyrights Reservered. <div> <br>
+    <hr>
+
+
+
+<script type="text/javascript">
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+
+</body>
+</html>

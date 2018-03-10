@@ -1,0 +1,74 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<title> Comments </title>
+		</head>
+		
+		<style>
+				.button {
+				    border: none;
+				    color: white;
+				    padding: 16px 32px;
+				    text-align: center;
+				    text-decoration: none;
+				    display: inline-block;
+				    font-size: 16px;
+				    margin: 4px 662px;
+				    -webkit-transition-duration: 0.4s; /* Safari */
+				    transition-duration: 0.4s;
+				    cursor: pointer;
+				    
+				}
+
+
+
+				.button {
+				    background-color: white;
+				    color: black;
+				    border: 2px solid #555555;
+				}
+
+				.button:hover {
+				    background-color: #555555;
+				    color: white;
+				}
+		</style>
+		
+		<script>
+		function Myfunc(){
+			
+			var text = "pai";
+			document.comments.display_box.value =  document.getElementById("comment_box").value;
+			
+			document.table.test.value = "<tr><td>" + comment + "</td></tr>";
+		}
+		function Reset(){
+			document.comments.comment_box.value = "Enter your comments here....";
+		}
+		</script>
+		<body>
+			<h3> Comments... </h3>
+			<form name = "comments">
+				<textarea cols = "50" rows = "3" id = "comment_box" style = "width: 768px; height:100px; padding:2%; font-size:1.2em; border:12px inset #7300e6; resize:none" placeholder="Enter your comments here..."></textarea><br><br>
+				<button type = "button" onclick = "Myfunc()" class = "button"> Send </button>
+				<button type = "button" onclick = "Reset()" class = "button"> Reset </button>
+				<textarea cols = "50" rows = "5" id = "display_box" style = "width:768px; height:500px; padding:2%; font-size:1.2em; border:12px inset #7300e6; resize:none"></textarea><br><br>
+				
+				<table border = "2" id = "table" width = "400px">
+					All Comments.... <br>
+					<tr> 
+						<th> All Comments... </th>
+					</tr>
+					<tr>
+						<td> hiiii...</td>
+					</tr>
+					<p id = "test">
+					<tr><td> panniv </td></tr></p>
+				</table>
+
+			<!--
+			style = "width:75%; height:100px; padding:2%; font-size:1.2em; border:12px inset #7300e6; resize:none"
+			-->	
+			</form>
+		</body>
+	</html>

@@ -1,0 +1,13 @@
+body {
+    background-image: url("wbcw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: deeppink;
+}
+
+#Final{
+	color: deeppink;
+}

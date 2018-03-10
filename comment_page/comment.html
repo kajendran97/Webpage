@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Music Mania </title>
+    <link type="text/css" rel="stylesheet" href="comment.css">
+    </head>
+
+    	<body>
+    		<script TYPE="text/javascript">
+    			
+				function validateForm() {
+          if (document.getElementById("txtName").value == "") {
+            alert("Please Enter Your Name")
+              document.getElementById("txtName").focus();
+              return false;
+          }
+ 				 	if (document.getElementById("txtMail").value == "") {
+  						alert("Please Enter Your E-Mail Id");
+  							document.getElementById("txtMail").focus();
+  							return false;
+  				 	}if(document.getElementById("txtComment").value == "") {
+  				 		alert("Enter your Feedback before submiting");
+  				 			document.getElementById("txtComment").focus();
+  				 			return false;
+  				 	}
+  				 	var x = document.forms["myForm"]["Email"].value;
+    				var atpos = x.indexOf("@");
+    				var dotpos = x.lastIndexOf(".");
+    					if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        					alert("Not a valid e-mail address");
+        					return false;
+    					}else {
+                var name = document.getElementById("txtName").value;
+                document.getElementById("demo").innerHTML = "Name is " + " - " + name;
+
+    						var mail = document.getElementById("txtMail").value;
+    						document.getElementById("demo1").innerHTML = " E-Mail Id " + " - " + mail;
+
+                var rate = document.getElementById("rate1").value;
+                document.getElementById("demo3").innerHTML = " Your Rating is " + " - " + rate;
+
+    						var comments = document.getElementById("txtComment").value;
+    						document.getElementById("demo2").innerHTML = " Feedback is " + " - " + comments;
+
+                alert(" Dear " + name + " Thankyou for your feedback and your comment was " + comments);
+    					}
+    					
+  			}
+
+  			function reset(){
+  						document.getElementById("myForm").reset();
+  			}
+
+    		</script>
+
+         
+
+        <img src="logo3.png" alt="logo" class="move6">
+
+        <div class="nav_bar">   <!--Top_Navigation_bar-->
+          <div id="top_nav">
+           <ul>
+              <li><a class="active" href="#home">Home</a></li>
+              <li><a href="#download">Download</a></li>
+              <li><a href="#quiz">Quiz</a></li>
+              <li><a href="#search">Search</a></li>
+              <li><a href="#addtocart">Add to Cart</a></li>
+              <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+      </div>  
+
+        <hr class="line">
+        <br>
+        <h1 class="move"> Enter your Feedback </h1>
+    		<form class="move1" name="myForm">
+
+           Name <br> <input type="text" name="text" placeholder="Enter your Name" ID="txtName" class="twoTxt"> <br>
+    			 <br>E-Mail Id <br>  <input type="email" name="Email" class="oneTxt" placeholder="Enter your E-Mail ID" ID="txtMail"> <br>
+    			 <br>
+           Rate Us -
+           
+          <input type="radio" name="good" value="Good" id="rate1"> Good
+          <input type="radio" name="too bad" value="Too Bad" id="rate1"> Too Bad
+          <input type="radio" name="make better" value="Make better" id="rate1"> Make better
+          <input type="radio" name="impresed" value="Impresed" id="rate1"> Impressed
+          <br>
+
+    			 <br> Feedback  <br>  <input type="text" name="comment" class="box" class="move3" placeholder="Enter your feedback....." ID="txtComment"> </h4> <br>
+    			 <br> <input type="button" value="submit" onclick="validateForm()" class="button">  <input type="button" value="reset" onclick="reset()" class="button">
+    		</form>
+
+    		<hr width="100%">
+
+    		<p id="demo" class="move4"></p>
+    		<p id="demo1" class="move4"></p>
+        <p id="demo3" class="move4"></p>
+        <p id="demo2" class="move4"></p>
+    		 
+        <footer>
+          <hr>
+          <font size="5" class="move5"> Thank you for your supports and feedbacks to our site, keep connected with us and enjoy your favourite music. </font>
+        </footer>
+
+    	</body>
+ </html>
